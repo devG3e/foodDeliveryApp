@@ -1,4 +1,3 @@
-// src/utils/api.js
 const BASE_URL = 'https://api.example.com'; // Replace with your API base URL
 
 export const fetchMenuItems = async () => {
@@ -12,4 +11,3 @@ export const fetchMenuItems = async () => {
   }
 };
 
-// Add more API functions as needed (e.g., submitOrder, getUserProfile, etc.)

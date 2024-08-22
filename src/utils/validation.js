@@ -1,9 +1,8 @@
-// src/utils/validation.js
 export const validateName = (name) => {
     if (!name) {
       return 'Name is required.';
     }
-    return null; // No error
+    return null;
   };
   
   export const validateEmail = (email) => {
@@ -12,7 +11,7 @@ export const validateName = (name) => {
     } else if (!/\S+@\S+\.\S+/.test(email)) {
       return 'Email is invalid.';
     }
-    return null; // No error
+    return null; 
   };
   
   export const validatePassword = (password) => {
@@ -21,8 +20,7 @@ export const validateName = (name) => {
     } else if (password.length < 6) {
       return 'Password must be at least 6 characters.';
     }
-    return null; // No error
+    return null;
   };
   
-  // Add more validation functions for other form fields
   

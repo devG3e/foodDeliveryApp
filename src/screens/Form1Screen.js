@@ -1,4 +1,3 @@
-// src/screens/Form1Screen.js
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 
@@ -8,18 +7,15 @@ const Form1Screen = ({ navigation }) => {
   const [phone, setPhone] = useState('');
 
   const handleNext = () => {
-    // Validate input fields (example: check if they are not empty)
+   
     if (!name || !email || !phone) {
       alert('Please fill in all fields.');
       return;
     }
 
-    // Save user details to context or state (example: using a context provider)
-    // You can replace this with your actual logic to save user data
-    // For demonstration purposes, I'm just logging the data here
+
     console.log('User details:', { name, email, phone });
 
-    // Navigate to the next form screen
     navigation.navigate('Form2');
   };
 

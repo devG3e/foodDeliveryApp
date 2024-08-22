@@ -1,4 +1,3 @@
-// src/screens/Form2Screen.js
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 
@@ -9,18 +8,13 @@ const Form2Screen = ({ navigation }) => {
   const [zipCode, setZipCode] = useState('');
 
   const handleNext = () => {
-    // Validate input fields (example: check if they are not empty)
     if (!address || !city || !state || !zipCode) {
       alert('Please fill in all address fields.');
       return;
     }
 
-    // Save address details to context or state (example: using a context provider)
-    // You can replace this with your actual logic to save address data
-    // For demonstration purposes, I'm just logging the data here
     console.log('Address details:', { address, city, state, zipCode });
 
-    // Navigate to the next form screen
     navigation.navigate('Form3');
   };
 

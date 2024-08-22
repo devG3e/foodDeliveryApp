@@ -1,4 +1,3 @@
-// src/context/AuthContext.js
 import React, { createContext, useContext, useState } from 'react';
 
 const AuthContext = createContext();
@@ -7,13 +6,11 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
   const login = (userData) => {
-    // Logic for authenticating user (e.g., API call)
-    setUser(userData);
+    setUser(userData); //login logic coming
   };
 
   const logout = () => {
-    // Logic for logging out user
-    setUser(null);
+    setUser(null); //log-out logic coming
   };
 
   return (

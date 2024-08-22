@@ -1,4 +1,3 @@
-// src/screens/Form3Screen.js
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 
@@ -8,17 +7,12 @@ const Form3Screen = () => {
   const [cvv, setCvv] = useState('');
 
   const handleSubmit = () => {
-    // Validate payment details (example: check if they are not empty)
     if (!cardNumber || !expirationDate || !cvv) {
       alert('Please fill in all payment details.');
       return;
     }
 
-    // Perform form submission logic (e.g., make an API call to process payment)
-    // For demonstration purposes, I'm just logging the data here
     console.log('Payment details submitted:', { cardNumber, expirationDate, cvv });
-
-    // You can navigate to a success screen or handle other actions as needed
   };
 
   return (
